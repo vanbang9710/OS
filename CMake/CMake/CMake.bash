@@ -2,7 +2,8 @@ cd CMake || exit
 ls
 make clean
 
-chmod +x Putty.bash
-./Putty.bash
+chmod +x producer.bash
+./producer.bash
+chmod +x consumer.bash
+./consumer.bash
 
-./consumer
