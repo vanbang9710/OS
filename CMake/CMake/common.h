@@ -7,10 +7,11 @@
 #define	MAXSIZE	8
 #define	ASLEEP	300000
 typedef struct {
+	int done;        //Sent all file content
 	int	in, out;	// Vi tri doc, ghi trong buffer
 	int	count;		// So luong phan tu trong buffer
-	int	buffer[MAXSIZE];// Buffer
+	char	buffer[MAXSIZE];// Buffer
 } buf_t;
-int	sem_signal(int semid, struct sembuf *, int flag);
-int	sem_wait(int semid, struct sembuf *, int flag);
+int	sem_signal(int semid, struct sembuf*, int flag);
+int	sem_wait(int semid, struct sembuf*, int flag);
 #endif

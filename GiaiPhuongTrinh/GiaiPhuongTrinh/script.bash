@@ -1,4 +1,4 @@
-cd C
+cd C || exit
 ls
 gcc -o PhuongTrinhBac1.o -c PhuongTrinhBac1.cpp
 ls

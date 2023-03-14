@@ -1,3 +1,4 @@
+//Nguyen Van Bang 20020002
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -48,7 +49,8 @@ int main(int	argc, char	*argv[])
 	buf->out = 0;
 	buf->count = 0;
 
-	sendval = 0;
+	FILE* fin;
+	fin = fopen("input.dat", "r");
 	while (1) {		// Both parent and child process run
 		
 		while (buf->count >= MAXSIZE);
@@ -56,13 +58,12 @@ int main(int	argc, char	*argv[])
 		sem_wait(semid, &sem, ~IPC_NOWAIT);
 
 		// Critical section
-		buf->buffer[buf->in] = sendval;
+		buf->buffer[buf->in] = fgetc(fin);
 		printf("count %d position %d value %d\n", buf->count, buf->in, buf->buffer[buf->in]);
 		buf->in = (buf->in+1) % MAXSIZE;
 		buf->count++;
 
 		sem_signal(semid, &sem, ~IPC_NOWAIT);
-		sendval++;
 	}
 }
 

@@ -1,3 +1,4 @@
+//Nguyen Van Bang 20020002
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
