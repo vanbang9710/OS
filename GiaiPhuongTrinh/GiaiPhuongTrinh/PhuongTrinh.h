@@ -1,0 +1,1 @@
+int GiaiPTBac1(double a, double b, double *x);

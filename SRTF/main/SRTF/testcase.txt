@@ -1,0 +1,207 @@
+//Testcase 0
+/*************************************************************/
+void initialize(queue &q)
+{
+	q.clear();
+	q.push_back(CTask(0,24)); //Process ID=0
+	q.push_back(CTask(4,7));  //Process ID=1
+	q.push_back(CTask(7,3));  //Process ID=2
+}
+/*************************************************************/
+void initialize_TestCase(Gantt &q)
+{
+	q.clear();
+	q.push_back(CPUBurst(0,4));
+	q.push_back(CPUBurst(1,3));
+	q.push_back(CPUBurst(2,3));
+    q.push_back(CPUBurst(1,4));
+    q.push_back(CPUBurst(0,20));
+}
+/*************************************************************/
+
+
+
+
+//Testcase1:
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(0, 61)); //Process ID=0
+	q.push_back(CTask(5, 72));  //Process ID=1
+	q.push_back(CTask(10, 23));  //Process ID=2
+	q.push_back(CTask(2, 16));  //Process ID=3
+	q.push_back(CTask(6, 10));  //Process ID=4
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(0, 2));
+	q.push_back(CPUBurst(3, 4));
+	q.push_back(CPUBurst(4, 10));
+	q.push_back(CPUBurst(3, 12));
+	q.push_back(CPUBurst(2, 23));
+	q.push_back(CPUBurst(0, 59));
+	q.push_back(CPUBurst(1, 72));
+}
+/*************************************************************/
+
+
+
+//Testcase2:
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(0, 11)); //Process ID=0
+	q.push_back(CTask(5, 72));  //Process ID=1
+	q.push_back(CTask(10, 23));  //Process ID=2
+	q.push_back(CTask(2, 16));  //Process ID=3
+	q.push_back(CTask(6, 10));  //Process ID=4
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(0, 11));
+	q.push_back(CPUBurst(4, 10));
+	q.push_back(CPUBurst(3, 16));
+	q.push_back(CPUBurst(2, 23));
+	q.push_back(CPUBurst(1, 72));
+}
+/*************************************************************/
+
+
+//Testcase 3
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(0, 34)); //Process ID=0
+	q.push_back(CTask(5, 14));  //Process ID=1
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(0, 5));
+	q.push_back(CPUBurst(1, 14));
+	q.push_back(CPUBurst(0, 29));
+}
+/*************************************************************/
+
+
+
+//Testcase4
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(98, 23)); //Process ID=0
+	q.push_back(CTask(20, 84));  //Process ID=1
+	q.push_back(CTask(26, 82));  //Process ID=2
+	q.push_back(CTask(17, 32));  //Process ID=3
+	q.push_back(CTask(41, 59));  //Process ID=4
+	q.push_back(CTask(90, 88));  //Process ID=5
+	q.push_back(CTask(61, 57));  //Process ID=6
+	q.push_back(CTask(41, 2));  //Process ID=7
+	q.push_back(CTask(64, 45));  //Process ID=8
+	q.push_back(CTask(84, 86));  //Process ID=9
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(3, 24));
+	q.push_back(CPUBurst(7, 2));
+	q.push_back(CPUBurst(3, 8));
+	q.push_back(CPUBurst(4, 13));
+	q.push_back(CPUBurst(8, 45));
+	q.push_back(CPUBurst(0, 23));
+	q.push_back(CPUBurst(4, 46));
+	q.push_back(CPUBurst(6, 57));
+	q.push_back(CPUBurst(2, 82));
+	q.push_back(CPUBurst(1, 84));
+	q.push_back(CPUBurst(9, 86));
+	q.push_back(CPUBurst(5, 88));
+}
+/*************************************************************/
+
+
+
+//Testcase 5 
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(10, 13)); //Process ID=0
+	q.push_back(CTask(2, 31));  //Process ID=1
+	q.push_back(CTask(5, 22));  //Process ID=2
+	q.push_back(CTask(4, 45));  //Process ID=3
+	q.push_back(CTask(7, 15));  //Process ID=4
+	q.push_back(CTask(8, 9));  //Process ID=5
+	q.push_back(CTask(1, 32));  //Process ID=6
+	q.push_back(CTask(3, 27));  //Process ID=7
+	q.push_back(CTask(0, 36));  //Process ID=8
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(8, 1));
+	q.push_back(CPUBurst(6, 2));
+	q.push_back(CPUBurst(7, 2));
+	q.push_back(CPUBurst(2, 2));
+	q.push_back(CPUBurst(4, 1));
+	q.push_back(CPUBurst(5, 9));
+	q.push_back(CPUBurst(0, 13));
+	q.push_back(CPUBurst(4, 14));
+	q.push_back(CPUBurst(2, 20));
+	q.push_back(CPUBurst(7, 25));
+	q.push_back(CPUBurst(6, 30));
+	q.push_back(CPUBurst(1, 31));
+	q.push_back(CPUBurst(8, 35));
+	q.push_back(CPUBurst(3, 45));
+}
+/*************************************************************/
+
+
+
+
+//Testcase 6
+/*************************************************************/
+void initialize(queue& q)
+{
+	q.clear();
+	q.push_back(CTask(10, 13)); //Process ID=0
+	q.push_back(CTask(2, 31));  //Process ID=1
+	q.push_back(CTask(5, 22));  //Process ID=2
+	q.push_back(CTask(4, 45));  //Process ID=3
+	q.push_back(CTask(7, 15));  //Process ID=4
+	q.push_back(CTask(8, 9));  //Process ID=5
+	q.push_back(CTask(1, 33));  //Process ID=6
+	q.push_back(CTask(3, 27));  //Process ID=7
+	q.push_back(CTask(0, 36));  //Process ID=8
+}
+/*************************************************************/
+void initialize_TestCase(Gantt& q)
+{
+	q.clear();
+	q.push_back(CPUBurst(8, 1));
+	q.push_back(CPUBurst(6, 1));
+	q.push_back(CPUBurst(1, 1));
+	q.push_back(CPUBurst(7, 2));
+	q.push_back(CPUBurst(2, 2));
+	q.push_back(CPUBurst(4, 1));
+	q.push_back(CPUBurst(5, 9));
+	q.push_back(CPUBurst(0, 13));
+	q.push_back(CPUBurst(4, 14));
+	q.push_back(CPUBurst(2, 20));
+	q.push_back(CPUBurst(7, 25));
+	q.push_back(CPUBurst(1, 30));
+	q.push_back(CPUBurst(6, 32));
+	q.push_back(CPUBurst(8, 35));
+	q.push_back(CPUBurst(3, 45));
+}
+/*************************************************************/
