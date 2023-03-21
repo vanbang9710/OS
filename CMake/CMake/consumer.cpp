@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 		perror("Cannot create semaphore");
 		return(2);
 	}
-	FILE* fout = fopen("output.dat", "w+");
+	FILE* fout = fopen("output.dat", "wb+");
 	while (1) {
 		while (buf->count == 0) {
 			if (buf->done) {
@@ -41,9 +41,9 @@ int main(int argc, char* argv[])
 		}
 		//usleep(50000);
 		sem_wait(semid, &sem, ~IPC_NOWAIT);
-		char i = buf->buffer[buf->out];
-		printf("%c\n", i);
-		fprintf(fout, "%c", &i);
+		char c = buf->buffer[buf->out];
+		printf("%c\n", c);
+		fwrite(&c, 1, 1, fout);
 		buf->out = (buf->out + 1) % MAXSIZE;
 		buf->count--;
 		sem_signal(semid, &sem, ~IPC_NOWAIT);

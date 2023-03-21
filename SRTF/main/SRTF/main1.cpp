@@ -1,26 +1,21 @@
 #include "common.h"
-//Testcase1:
 /*************************************************************/
 void initialize(queue& q)
 {
 	q.clear();
-	q.push_back(CTask(0, 61)); //Process ID=0
-	q.push_back(CTask(5, 72));  //Process ID=1
-	q.push_back(CTask(10, 23));  //Process ID=2
-	q.push_back(CTask(2, 16));  //Process ID=3
-	q.push_back(CTask(6, 10));  //Process ID=4
+	q.push_back(CTask(0, 24)); //Process ID=0
+	q.push_back(CTask(4, 7));  //Process ID=1
+	q.push_back(CTask(7, 3));  //Process ID=2
 }
 /*************************************************************/
 void initialize_TestCase(Gantt& q)
 {
 	q.clear();
-	q.push_back(CPUBurst(0, 2));
-	q.push_back(CPUBurst(3, 4));
-	q.push_back(CPUBurst(4, 10));
-	q.push_back(CPUBurst(3, 12));
-	q.push_back(CPUBurst(2, 23));
-	q.push_back(CPUBurst(0, 59));
-	q.push_back(CPUBurst(1, 72));
+	q.push_back(CPUBurst(0, 4));
+	q.push_back(CPUBurst(1, 3));
+	q.push_back(CPUBurst(2, 3));
+	q.push_back(CPUBurst(1, 4));
+	q.push_back(CPUBurst(0, 20));
 }
 /*************************************************************/
 int main(int argc, char* argv[])

@@ -50,7 +50,7 @@ int main(int	argc, char* argv[])
 	buf->out = 0;
 	buf->count = 0;
 
-	FILE* fin = fopen("input.dat", "r");
+	FILE* fin = fopen("input.dat", "rb");
 	while (1) {		// Both parent and child process run
 
 		while (buf->count >= MAXSIZE);
@@ -58,9 +58,9 @@ int main(int	argc, char* argv[])
 		sem_wait(semid, &sem, ~IPC_NOWAIT);
 
 		// Critical section
-
-		char c = fgetc(fin);
-		if (c != EOF) {
+		char c;
+		size_t readbyte = fread(&c, 1, 1, fin);
+		if (readbyte == 1) {
 			buf->buffer[buf->in] = c;
 			printf("count %d position %d value %c\n", buf->count, buf->in, buf->buffer[buf->in]);
 			buf->in = (buf->in + 1) % MAXSIZE;

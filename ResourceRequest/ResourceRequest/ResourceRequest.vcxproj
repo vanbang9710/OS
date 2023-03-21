@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4c80ca04-0dfb-4888-8174-c95d6b69f0d4}</ProjectGuid>
-    <RootNamespace>Semaphore</RootNamespace>
+    <ProjectGuid>{c4a7d019-a500-42d8-a0bf-59b3cb5a3734}</ProjectGuid>
+    <RootNamespace>ResourceRequest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,12 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="consumer.cpp" />
-    <ClCompile Include="producer.cpp" />
-    <ClCompile Include="sem_util.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="resourcerequest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
+    <None Include="resourcerequest.inp" />
+    <None Include="resourcerequest.out" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

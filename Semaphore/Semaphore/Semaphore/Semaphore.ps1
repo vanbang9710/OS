@@ -1,4 +1,0 @@
-ls
-make
-./producer
-./consumer
