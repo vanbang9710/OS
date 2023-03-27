@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="SRTF1.cpp" />
+    <ClCompile Include="main1.cpp" />
+    <ClCompile Include="SRTP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
