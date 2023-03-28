@@ -2,7 +2,29 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../CompetitiveProgramming"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.cnf": "ssh_config",
+			"*.err": "log",
+			"*.ini": "ssh_config",
+			"*.log.*": "log",
+			"*.md": "njk",
+			"*.njk": "njk",
+			"*.plg": "ini",
+			"*.txt": "log",
+			"*.vssettings": "xml",
+			"xiosbase": "cpp",
+			"ios": "cpp",
+			"iosfwd": "cpp",
+			"vector": "cpp",
+			"iostream": "cpp",
+			"format": "cpp"
+		},
+		"powershell.cwd": "e:\\Code\\OS"
+	}
 }
