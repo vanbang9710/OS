@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../CompetitiveProgramming"
+		},
+		{
+			"path": "../../ObsidianVaults/ObsidianVault/02_Areas/Config"
 		}
 	],
 	"settings": {
@@ -18,13 +21,21 @@
 			"*.plg": "ini",
 			"*.txt": "log",
 			"*.vssettings": "xml",
+			".gitrepo": "properties",
+			"*.sql": "sql",
+			"*.resbackup": "json",
+			"*.canvas": "json",
 			"xiosbase": "cpp",
 			"ios": "cpp",
 			"iosfwd": "cpp",
 			"vector": "cpp",
 			"iostream": "cpp",
-			"format": "cpp"
+			"format": "cpp",
+			"ostream": "cpp"
 		},
-		"powershell.cwd": "e:\\Code\\OS"
+		"powershell.cwd": "e:\\Code\\OS",
+		"git.ignoredRepositories": [
+			"E:\\ObsidianVaults"
+		]
 	}
 }

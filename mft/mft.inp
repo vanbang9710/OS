@@ -1,0 +1,27 @@
+﻿	0 gTable.push_back(MemSlot(0,512));
+	1 gTable.push_back(MemSlot(512,128));
+	2 640 256
+	3 gTable.push_back(MemSlot(512+128+256,9048));
+	4 9944 256
+	5 10200 4096
+	//Request initialization
+	q.push_back(Process(1,200));2
+	q.push_back(Process(2,1000));5
+	q.push_back(Process(3,256));4
+
+	//Memory reference
+	r.push_back(Refer(1,30));
+	r.push_back(Refer(2,904));
+	r.push_back(Refer(2,1904));
+	r.push_back(Refer(3,130));
+	670;
+	aq[1]._address=11104;
+	aq[2]._address=-1;
+	aq[3]._address=10074;
+
+	tcs.push_back(MemState(0,FREE,-1,0));
+	tcs.push_back(MemState(1,FREE,-1,0));
+	tcs.push_back(MemState(2,OCCUPIED,1,56));
+	tcs.push_back(MemState(3,FREE,-1,0));
+	tcs.push_back(MemState(4,OCCUPIED,3,0));
+	tcs.push_back(MemState(5,OCCUPIED,2,3096));
