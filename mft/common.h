@@ -36,7 +36,7 @@ typedef vector<Refer> RequestQueue;
 class Process {
 public:
 	int _id;
-	int _size;
+	int _size; // limit
 	int _slotID; // slot id in RAM
 
 	Process(int i, int s) {
@@ -69,7 +69,7 @@ public:
 	int _size; // limit
 	int _status; // FREE or OCCUPIED
 	int _progsize; // process' limit
-	int _progid;
+	int _progid; // process' id
 	int _start; // base
 
 	MemSlot(int st, int s) {
