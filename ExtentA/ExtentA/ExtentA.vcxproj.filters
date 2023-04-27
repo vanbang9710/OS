@@ -15,16 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GiaiPhuongTrinh.cpp">
+    <ClCompile Include="ExtentA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PhuongTrinhBac1.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PhuongTrinh.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
   </ItemGroup>
 </Project>

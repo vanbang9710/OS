@@ -1,34 +1,11 @@
-// GiaiPhuongTrinh.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ExtentA.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-#ifdef _MSC_VER
-#define _CRT_SECURE_NO_WARNINGS
-#endif // _MSC_VER
 
-#include <stdlib.h>
-#include <stdio.h>
-#include "PhuongTrinh.h"
-
+#include <iostream>
 
 int main()
 {
-	double a, b, x;
-	int songhiem;
-	printf("Please enter a=");
-	scanf("%lf", &a);
-	printf("Please enter b=");
-	scanf("%lf", &b);
-	songhiem = GiaiPTBac1(a, b, &x);
-	switch (songhiem) {
-	case -1:
-		printf("No result"); break;
-	case 0:
-		printf("infinite"); break;
-	case 1:
-		printf("one result, %lf", x); break;
-	default:
-		printf("Invalid returned value"); break;
-	}
-	exit(0);
+    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -67,4 +67,7 @@ void FIFO(string refs, int nFrame, repqueue& wt) {
 			}
 		}
 	}
+	for (auto& r : wt) {
+		cout << ((r._swapPage == -1) ? int(r._swapPage) : (r._swapPage - '0')) << '\n';
+	}
 }

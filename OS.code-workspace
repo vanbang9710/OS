@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../ObsidianVaults/ObsidianVault/02_Areas/Config"
+		},
+		{
+			"path": "../../../../home/vanba/App"
 		}
 	],
 	"settings": {
@@ -16,7 +19,7 @@
 			"*.err": "log",
 			"*.ini": "ssh_config",
 			"*.log.*": "log",
-			"*.md": "njk",
+			"*.md": "markdown_latex_combined",
 			"*.njk": "njk",
 			"*.plg": "ini",
 			"*.txt": "log",
